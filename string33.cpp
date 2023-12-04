@@ -10,12 +10,10 @@ int main()
    gets(b);
     int n=strlen(a);
     int m=strlen(b);
-    if(m!=n){ printf("it is not possible");exit(1);
-	}
 	for(i=0;i<n;i++)
-	{for(j=0;j<n;j++)
-	{ if(a[i]==a[j])
-	{ l=l+1;a[j]='#';
+	{for(j=0;j<m;j++)
+	{ if(a[i]==b[j])
+	{ l=l+1;b[j]='#';j=m;
 	}         
 	}
 	}
